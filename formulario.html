@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<HTML lang="pt br">
+    <head>
+    <meta charset="UTF-8">
+    <title>FORMULÁRIO</title>
+    <style>
+  header{
+    background-color: lightpink;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 10%;
+    width: 100%;
+ }
+    main{
+        background-color: white;
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    font-size: xx-large;
+        
+    }
+
+     footer{
+    background-color: lightpink;
+    position: fixed;
+   top: 90%;
+    left: 0%;
+    height: 10%;
+    width: 100%;
+ }
+
+</style>
+
+     <main>
+     <form action="formulario.html">
+     <h3>Formulário HTML:</h3>
+     <label for="fname">Primeiro Nome:</label>
+     <input type="text" id="fname" name="lname" value="Nome"><br>
+     <label for="lname">Sobrenome:</label>
+     <input type="text" id="lname" name="lname" value="Sobrenome"><br>
+<label for="fname">Ficou com:</label>
+<input type="text" id="MENÇÃO" name="MENÇÃO" value="Ficou com"><br>
+<input type="reset" value="Limpa">
+<input type="submit" value="Enviar" onclick="nome()">
+     </form>
+     <script>
+     function nome (){
+    var fn, ln, fc, texto;
+    fn = document.getElementById("fname").value;
+    ln = document.getElementById("lname").value;
+    fc = document.getElementById("MENÇÃO").value;
+    texto = "nome registrado" + " " + fn + " " + "ficou com" + " " + fc;
+     alert(texto);
+     }
+     
+
+     </script>
+   
+
+
+     </body>
+    </html>
